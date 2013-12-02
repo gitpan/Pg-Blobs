@@ -1,0 +1,13 @@
+
+
+This archive contains the distribution Pg-Blobs,
+version 0.001:
+
+  Manage Postgresql blobs from any DBI (dbh) capable object.
+
+This software is copyright (c) 2013 by Jerome Eteve.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+
