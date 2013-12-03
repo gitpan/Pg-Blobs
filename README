@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Pg-Blobs,
-version 0.001:
+version 0.002:
 
   Manage Postgresql blobs from any DBI (dbh) capable object.
 

@@ -21,4 +21,4 @@ meta-spec:
 name: Pg-Blobs
 requires:
   Moose::Role: 2.0401
-version: 0.001
+version: 0.002

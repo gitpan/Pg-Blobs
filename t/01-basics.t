@@ -12,16 +12,18 @@ sub pgblobs_dbh{ return shift->dbh(); }
 
 package main;
 
-eval{ require Test::postgresql;};
-if( $@ ){
-  plan skip_all => 'No Test::postgresql';
-  done_testing();
-};
+BEGIN{
+  eval{ require Test::postgresql;};
+  if( $@ ){
+    plan skip_all => 'No Test::postgresql';
+    done_testing();
+  };
+}
 
 diag("Building new Test::postgresql");
 my $pgsql = Test::postgresql->new();
 unless( $pgsql ){
-  plan skip_all => "Error building Test::postgresql: ".${"Test::postgresql::errstr"};
+  plan skip_all => "Error building Test::postgresql: ".$Test::postgresql::errstr;
   done_testing();
 }
 diag ("Done - Starting actual tests on temp DB: ".$pgsql->dsn());

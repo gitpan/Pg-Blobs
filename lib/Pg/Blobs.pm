@@ -1,6 +1,6 @@
 package Pg::Blobs;
 {
-  $Pg::Blobs::VERSION = '0.001';
+  $Pg::Blobs::VERSION = '0.002';
 }
 use Moose::Role 2.0401;
 
